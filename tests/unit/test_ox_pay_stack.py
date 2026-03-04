@@ -1,10 +1,10 @@
 import aws_cdk as core
 import aws_cdk.assertions as assertions
 
-from ox pay.ox pay_stack import OxPayStack
+from ox_pay.ox_pay_stack import OxPayStack
 
 # example tests. To run these tests, uncomment this file along with the example
-# resource in ox pay/ox pay_stack.py
+# resource in ox_pay/ox_pay_stack.py
 def test_sqs_queue_created():
     app = core.App()
     stack = OxPayStack(app, "ox-pay")
