@@ -35,11 +35,11 @@ class PipelineStack(Stack):
                     actions=[
                         actions.CodeStarConnectionsSourceAction(
                             action_name="GitHub_Source",
-                            owner="YOUR_GITHUB_USERNAME",   # ← change this
+                            owner="dilshanmuditha",   # ← change this
                             repo="oxpay-backend",           # ← change this
                             branch="main",
                             output=source_output,
-                            connection_arn="YOUR_CODESTAR_CONNECTION_ARN",  # ← step 5
+                            connection_arn="arn:aws:codeconnections:ap-southeast-1:371894922818:connection/e8a43e7a-ad61-4c79-81a7-5b89ecc7089f",  # ← step 5
                         )
                     ]
                 ),
@@ -78,7 +78,7 @@ class PipelineStack(Stack):
                     actions=[
                         actions.ManualApprovalAction(
                             action_name="Dev_Lead_Approval",
-                            notify_emails=["devlead@oxpay.com"],  # ← change
+                            notify_emails=["mudithadilshan1999@gmail.com"],  # ← change
                         )
                     ]
                 ),
@@ -104,7 +104,7 @@ class PipelineStack(Stack):
                     actions=[
                         actions.ManualApprovalAction(
                             action_name="Client_UAT_Approval",
-                            notify_emails=["client@oxpay.com"],  # ← change
+                            notify_emails=["mudithadilshan1999@gmail.com"],  # ← change
                         )
                     ]
                 ),
